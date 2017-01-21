@@ -1,13 +1,17 @@
-/* Styles for expanding search element */
 
-
-/* Text white */
+/*************************/
+/*Colores para los textos*/
+/*************************/
 
 .text-white{
   color:white;}
 
 .text-green{
   color:#42ab9e;}
+
+/**********/
+/*Buscador*/
+/**********/
 
 form{
   margin-left: 140px;}
@@ -26,15 +30,15 @@ span {
   padding-top: 1%;}
 
 .fi-magnifying-glass:before {
-content: "\f16c";
-position: absolute;
-margin-left: 150px;
-margin-top: 6px;
-font-size: 25px;
-line-height: 50px;
-color: #3F3F3E;
-z-index: 2;
-display: inline-block;}
+  content: "\f16c";
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 6px;
+  font-size: 25px;
+  line-height: 50px;
+  color: #3F3F3E;
+  z-index: 2;
+  display: inline-block;}
 
 input[type="text"].dream-search {
   width: 90px;
@@ -55,6 +59,9 @@ input[type="text"].dream-search:focus {
   display: table;
   margin: 0 auto;}
 
+/**************/
+/*Bg principal*/
+/**************/
 
 .quote{
   display: table;
@@ -66,6 +73,10 @@ input[type="text"].dream-search:focus {
   -o-background-size: cover;
      background-size: cover; 
   text-align: center;}
+
+/********************/
+/*Círculos de usario*/
+/********************/
 
 .users{
   color:white;
@@ -85,10 +96,6 @@ border-radius: 35px;}
   font-weight: bolder;
 }
 
-
-
-
-
 @-webkit-keyframes 
 load { 0% {
 stroke-dashoffset:0
@@ -105,57 +112,409 @@ stroke-dashoffset:0
 }
 }
 
+/*********************/
+/*Barra de progreso 1*/
+/*********************/
 
-.progress>li {
+.progress-control{
+  padding-left: 210px;}
+
+.progress1>li {
   display: inline-block;
   position: relative;
   text-align: center;
   color: white;
   font-weight: 100;
   margin: 2rem;
-  font-size: 13px;
-}
+  font-size: 13px;}
 
-.progress>li:before {
+.progress1>li:before {
   content: attr(data-name);
   position: absolute;
   width: 100%;
   bottom: -2rem;
-  font-weight: 400;
-}
+  font-weight: 400;}
 
-.progress>li:after {
+.progress1>li:after {
   content: attr(data-percent);
   position: absolute;
   width: 100%;
   top: 2.0rem;
   left: 0;
   font-size: 20px;
-  text-align: center;
-}
+  text-align: center;}
 
-.progress svg {
+.progress1 svg {
   width: 6rem;
-  height: 6rem;
-}
+  height: 6rem;}
 
-.progress svg:nth-child(2) {
+.progress1 svg:nth-child(2) {
   position: absolute;
   left: 0;
   top: 0;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-}
+  -ms-transform: rotate(-90deg);}
 
-.progress svg:nth-child(2) path {
+.progress1 svg:nth-child(2) path {
   fill: none;
   stroke-width: 7;
   stroke-dasharray: 629;
-  stroke: rgba(169, 59, 59, 0.9);
+  stroke: rgb(255, 48, 48);
   -webkit-animation: load 10s;
   -moz-animation: load 10s;
   -o-animation: load 10s;
-  animation: load 10s;
+  animation: load 10s;}
+
+/*********************/
+/*Barra de progreso 2*/
+/*********************/
+
+.progress2>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  margin: 2rem;
+  margin-left: 0.5rem;
+  font-size: 13px;}
+
+.progress2>li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;}
+
+.progress2>li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 2.0rem;
+  left: 0;
+  font-size: 20px;
+  text-align: center;}
+
+.progress2 svg {
+  width: 6rem;
+  height: 6rem;}
+
+.progress2 svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);}
+
+.progress2 svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 7;
+  stroke-dasharray: 629;
+  stroke: rgb( 0, 250, 154);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;}
+
+/*********************/
+/*Barra de progreso 3*/
+/*********************/
+
+.progress3>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  margin: 2rem;
+  margin-left: 0.5rem;
+  font-size: 13px;}
+
+.progress3>li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;}
+
+.progress3>li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 2.0rem;
+  left: 0;
+  font-size: 20px;
+  text-align: center;}
+
+.progress3 svg {
+  width: 6rem;
+  height: 6rem;}
+
+.progress3 svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);}
+
+.progress3 svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 7;
+  stroke-dasharray: 629;
+  stroke: rgb(238, 230, 133);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;}
+
+/*********************/
+/*Barra de progreso 4*/
+/*********************/
+
+.progress4>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  margin: 2rem;
+  margin-left: 0.5rem;
+  font-size: 13px;}
+
+.progress4>li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;}
+
+.progress4>li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 2.0rem;
+  left: 0;
+  font-size: 20px;
+  text-align: center;}
+
+.progress4 svg {
+  width: 6rem;
+  height: 6rem;}
+
+.progress4 svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);}
+
+.progress4 svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 7;
+  stroke-dasharray: 629;
+  stroke: rgb( 99, 184, 255);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;}
+
+/*********************/
+/*Botón visit Website*/
+/*********************/
+
+  .bt-type1{
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    color:#fff;
+    line-height: 32px;
+    border-radius: 25px;
+    cursor:pointer;}
+
+  .fi-share{
+    display: inline-block;
+    height: 30px;
+    padding: 0 8px;
+    border: 1px solid #fff;
+    color:#fff;
+    line-height: 32px;
+    border-radius: 25px;
+    cursor:pointer;}
+  
+  .text-date{
+  margin-top: 50px;}
+
+
+
+
+
+
+  .image-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 4px; }
+
+.image-overlay-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+
+.overlay-fade-in p {
+  letter-spacing: 0.15em;
+  color: #f4f4f4;
+  font-size: 28px;
+  opacity: 0;
+  transition: all 0.2s linear; }
+.overlay-fade-in img {
+  transition: all 0.2s linear; }
+.overlay-fade-in .image-overlay-content {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out; }
+.overlay-fade-in h2 {
+  color: #f2f2f2;
+  font-size: 1.8rem;
+  margin-top: 40%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.7); }
+.overlay-fade-in .button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #FFF;
+  color: #222;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+  border: 1px solid #999;
+  opacity: 0;
+  transition: all 0.2s ease-in-out; }
+  .overlay-fade-in .button:hover {
+    box-shadow: 0 0 5px #000; }
+.overlay-fade-in:hover img {
+  transform: scale(1.2); }
+.overlay-fade-in:hover .image-overlay-content {
+  opacity: 1; }
+.overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button {
+  opacity: 1; }
+.overlay-fade-in:hover p {
+  transition-delay: 0.1s; }
+.overlay-fade-in:hover .button {
+  transition-delay: 0.2s; }
+
+.overlay-slide-in-left img {
+  transition: all 0.3s ease-in-out; }
+.overlay-slide-in-left .image-overlay-content {
+  background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateX(-110%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 7px #ccc; }
+.overlay-slide-in-left h2 {
+  font-size: 1.8rem;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 40%;
+  color: #000;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
+.overlay-slide-in-left p {
+  opacity: 0;
+  color: #333;
+  transition: all 0.2s linear; }
+.overlay-slide-in-left .button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+  border-radius: 7px; }
+  .overlay-slide-in-left .button:hover {
+    background-color: #444; }
+.overlay-slide-in-left:hover .image-overlay-content {
+  transform: translateX(0px); }
+.overlay-slide-in-left:hover img {
+  transform: translateX(80%);
+  transition-delay: 0.1s; }
+.overlay-slide-in-left:hover p {
+  opacity: 1;
+  transition-delay: 0.4s; }
+
+.overlay-fade-in-new-background .button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+  opacity: 0;
+  transition: all 0.2s ease-in-out; }
+  .overlay-fade-in-new-background .button:hover {
+    box-shadow: 0 0 5px #fff;
+    background-color: #222; }
+.overlay-fade-in-new-background p {
+  font-size: 28px; }
+.overlay-fade-in-new-background .image-overlay-content {
+  opacity: 0;
+  background-image: url(http://subtlepatterns.com/patterns/gplaypattern.png);
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.4s ease-in-out; }
+.overlay-fade-in-new-background h2 {
+  color: #000;
+  font-size: 1.6rem;
+  margin-top: 30%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out; }
+.overlay-fade-in-new-background p {
+  opacity: 0;
+  transition: all 0.2s linear; }
+.overlay-fade-in-new-background img {
+  transition: all 0.2s ease-in-out; }
+.overlay-fade-in-new-background:hover img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  transform: scale(1.5); }
+.overlay-fade-in-new-background:hover .image-overlay-content {
+  opacity: 1; }
+.overlay-fade-in-new-background:hover h2, .overlay-fade-in-new-background p, .overlay-fade-in-new-background .button {
+  opacity: 1; }
+.overlay-fade-in-new-background:hover p {
+  transition-delay: 0.1s; }
+.overlay-fade-in-new-background:hover .button {
+  transition-delay: 0.2s; }
+
+
+.icons-sm{
+  margin-top: 20px;
+  width: 40px;}
+
+.sm{
+  margin-top: 40px;
 }
+
+
+
