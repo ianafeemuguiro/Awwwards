@@ -1,7 +1,14 @@
+/** Este "row" ayuda hacer full la grid de foundation (No borrar) **/
 
-/*************************/
-/*Colores para los textos*/
-/*************************/
+.row {
+max-width: 100%;}
+
+/** Bg para la Página **/
+
+body{
+  background-color: #F2F2F2;}
+
+/** Colores para los Textos **/
 
 .text-white{
   color:white;}
@@ -9,9 +16,12 @@
 .text-green{
   color:#42ab9e;}
 
-/**********/
-/*Buscador*/
-/**********/
+/** Espacio entre Divs y Rows **/
+
+.space{
+  margin-top: 60px;}
+
+/** Menu y buscador (Pendiente) **/
 
 form{
   margin-left: 140px;}
@@ -59,14 +69,12 @@ input[type="text"].dream-search:focus {
   display: table;
   margin: 0 auto;}
 
-/**************/
-/*Bg principal*/
-/**************/
+/** Bg Banner **/
 
-.quote{
+.bg-banner{
   display: table;
   width: 100%;
-  height: 450px;
+  height: 470px;
   background: url('../img/bg.jpg') no-repeat 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -74,9 +82,14 @@ input[type="text"].dream-search:focus {
      background-size: cover; 
   text-align: center;}
 
-/********************/
-/*Círculos de usario*/
-/********************/
+/** Elementos dentro del Banner **/
+
+/** Margen del Banner **/
+
+.text-date{
+  margin-top: 50px;}
+
+/** Círculos Usuarios **/
 
 .users{
   color:white;
@@ -85,16 +98,21 @@ input[type="text"].dream-search:focus {
 -moz-border-radius: 35px;
 border-radius: 35px;}
 
+/** Botón **/
+
 .btn-circle{
   border: 1px solid white;
   padding: 8px 12px; 
   width: 40px;
   border-radius: 25px;}
 
+/** Título **/
+
 .title{
   font-size: 35px;
-  font-weight: bolder;
-}
+  font-weight: bolder;}
+
+/** Barras de Progreso **/
 
 @-webkit-keyframes 
 load { 0% {
@@ -112,12 +130,10 @@ stroke-dashoffset:0
 }
 }
 
-/*********************/
-/*Barra de progreso 1*/
-/*********************/
-
 .progress-control{
-  padding-left: 210px;}
+  padding-left: 400px;}
+
+/***** Barra de Progreso 1 *****/
 
 .progress1>li {
   display: inline-block;
@@ -167,9 +183,7 @@ stroke-dashoffset:0
   -o-animation: load 10s;
   animation: load 10s;}
 
-/*********************/
-/*Barra de progreso 2*/
-/*********************/
+/***** Barra de Progreso 2 *****/
 
 .progress2>li {
   display: inline-block;
@@ -220,9 +234,7 @@ stroke-dashoffset:0
   -o-animation: load 10s;
   animation: load 10s;}
 
-/*********************/
-/*Barra de progreso 3*/
-/*********************/
+/***** Barra de Progreso 3 *****/
 
 .progress3>li {
   display: inline-block;
@@ -273,9 +285,7 @@ stroke-dashoffset:0
   -o-animation: load 10s;
   animation: load 10s;}
 
-/*********************/
-/*Barra de progreso 4*/
-/*********************/
+/***** Barra de Progreso 4 *****/
 
 .progress4>li {
   display: inline-block;
@@ -326,40 +336,42 @@ stroke-dashoffset:0
   -o-animation: load 10s;
   animation: load 10s;}
 
-/*********************/
-/*Botón visit Website*/
-/*********************/
+/** Botón de Visitas **/
 
-  .bt-type1{
-    position: relative;
-    display: inline-block;
-    height: 30px;
-    padding: 0 10px;
-    border: 1px solid #fff;
-    color:#fff;
-    line-height: 32px;
-    border-radius: 25px;
-    cursor:pointer;}
+.btn-visit-case{
+  margin-left: -100px;}
 
-  .fi-share{
-    display: inline-block;
-    height: 30px;
-    padding: 0 8px;
-    border: 1px solid #fff;
-    color:#fff;
-    line-height: 32px;
-    border-radius: 25px;
-    cursor:pointer;}
-  
-  .text-date{
-  margin-top: 50px;}
+.bt-type1{
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #fff;
+  color:#fff;
+  line-height: 32px;
+  border-radius: 25px;
+  cursor:pointer;}
 
+/** Botón para Compartir **/
 
+.bt-type2{
+  margin-left: 220px;}
 
+/** Icono **/
 
+.fi-share{
+  display: inline-block;
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid #fff;
+  color:#fff;
+  line-height: 32px;
+  border-radius: 25px;
+  cursor:pointer;}
+ 
+/** Imágenes Nominados **/  
 
-
-  .image-wrapper {
+.image-wrapper {
   width: 100%;
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.04);
@@ -382,12 +394,15 @@ stroke-dashoffset:0
   font-size: 28px;
   opacity: 0;
   transition: all 0.2s linear; }
+
 .overlay-fade-in img {
   transition: all 0.2s linear; }
+
 .overlay-fade-in .image-overlay-content {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease-in-out; }
+
 .overlay-fade-in h2 {
   color: #f2f2f2;
   font-size: 1.8rem;
@@ -395,6 +410,7 @@ stroke-dashoffset:0
   opacity: 0;
   transition: all 0.2s ease-in-out;
   background: rgba(0, 0, 0, 0.7); }
+
 .overlay-fade-in .button {
   display: inline-block;
   text-decoration: none;
@@ -407,21 +423,28 @@ stroke-dashoffset:0
   border: 1px solid #999;
   opacity: 0;
   transition: all 0.2s ease-in-out; }
-  .overlay-fade-in .button:hover {
+
+.overlay-fade-in .button:hover {
     box-shadow: 0 0 5px #000; }
+
 .overlay-fade-in:hover img {
   transform: scale(1.2); }
+
 .overlay-fade-in:hover .image-overlay-content {
   opacity: 1; }
+
 .overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button {
   opacity: 1; }
+
 .overlay-fade-in:hover p {
   transition-delay: 0.1s; }
+
 .overlay-fade-in:hover .button {
   transition-delay: 0.2s; }
 
 .overlay-slide-in-left img {
   transition: all 0.3s ease-in-out; }
+
 .overlay-slide-in-left .image-overlay-content {
   background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);
   background-color: rgba(0, 0, 0, 0.3);
@@ -429,16 +452,19 @@ stroke-dashoffset:0
   opacity: 1;
   transition: all 0.4s ease-in-out;
   box-shadow: 0 0 7px #ccc; }
+
 .overlay-slide-in-left h2 {
   font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.7);
   margin-top: 40%;
   color: #000;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
+
 .overlay-slide-in-left p {
   opacity: 0;
   color: #333;
   transition: all 0.2s linear; }
+
 .overlay-slide-in-left .button {
   display: inline-block;
   text-decoration: none;
@@ -449,13 +475,17 @@ stroke-dashoffset:0
   box-shadow: 0 0 1px #000;
   position: relative;
   border-radius: 7px; }
-  .overlay-slide-in-left .button:hover {
+
+.overlay-slide-in-left .button:hover {
     background-color: #444; }
+
 .overlay-slide-in-left:hover .image-overlay-content {
   transform: translateX(0px); }
+
 .overlay-slide-in-left:hover img {
   transform: translateX(80%);
   transition-delay: 0.1s; }
+
 .overlay-slide-in-left:hover p {
   opacity: 1;
   transition-delay: 0.4s; }
@@ -472,49 +502,177 @@ stroke-dashoffset:0
   position: relative;
   opacity: 0;
   transition: all 0.2s ease-in-out; }
-  .overlay-fade-in-new-background .button:hover {
+
+.overlay-fade-in-new-background .button:hover {
     box-shadow: 0 0 5px #fff;
     background-color: #222; }
+
 .overlay-fade-in-new-background p {
   font-size: 28px; }
+
 .overlay-fade-in-new-background .image-overlay-content {
   opacity: 0;
   background-image: url(http://subtlepatterns.com/patterns/gplaypattern.png);
   background-color: rgba(255, 255, 255, 0.5);
   transition: all 0.4s ease-in-out; }
+
 .overlay-fade-in-new-background h2 {
   color: #000;
   font-size: 1.6rem;
   margin-top: 30%;
   opacity: 0;
   transition: all 0.2s ease-in-out; }
+
 .overlay-fade-in-new-background p {
   opacity: 0;
   transition: all 0.2s linear; }
+
 .overlay-fade-in-new-background img {
   transition: all 0.2s ease-in-out; }
+
 .overlay-fade-in-new-background:hover img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   filter: gray;
   -webkit-filter: grayscale(100%);
   transform: scale(1.5); }
+
 .overlay-fade-in-new-background:hover .image-overlay-content {
   opacity: 1; }
+
 .overlay-fade-in-new-background:hover h2, .overlay-fade-in-new-background p, .overlay-fade-in-new-background .button {
   opacity: 1; }
+
 .overlay-fade-in-new-background:hover p {
   transition-delay: 0.1s; }
+
 .overlay-fade-in-new-background:hover .button {
   transition-delay: 0.2s; }
 
+/** Textos Hover **/
+
+.text-numbers{
+  margin-left: 20px;
+  margin-top: 25px;}
+
+.small-text{
+  font-size: 14px;}
+
+/** Botón "Vote now!" Hover **/
+
+.btn-vote{
+  margin-top: 120px;
+  margin-left: 30px;}
+
+/** Redes Sociales Hover **/
 
 .icons-sm{
-  margin-top: 20px;
-  width: 40px;}
+  margin-top: 20px;}
 
 .sm{
-  margin-top: 40px;
+  margin-top: 20px;
+  width: 30px;
+  display: inline-block;}
+
+/** Información de los Nominados **/
+
+.content{
+  margin-top: 20px;}
+
+.text-content{
+  font-size: 14px;}
+
+/** Hover Tooltip **/
+
+.users-tooltip{
+  margin-left: 1px;
+  height: 60px;
+  width: 60px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+}
+ 
+/** Corazón **/
+.heart{
+  color:red;
 }
 
+/** Menu Footer Wrap **/
 
+#primary_nav_wrap{
+  margin-top:15px;
+  margin-left:115px;}
+
+#primary_nav_wrap ul{
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0}
+
+#primary_nav_wrap ul a{
+  display:block;
+  color:#333;
+  text-decoration:none;
+  font-weight:700;
+  font-size:12px;
+  line-height:32px;
+  padding:0 15px;
+  font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif}
+
+#primary_nav_wrap ul li{
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0}
+
+#primary_nav_wrap ul li:hover{
+background-color:#F2F2F2;}
+
+#primary_nav_wrap ul ul{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#fff;
+  padding:0}
+
+#primary_nav_wrap ul ul li{
+  float:none;
+  width:200px}
+
+#primary_nav_wrap ul ul a{
+  line-height:120%;
+  padding:10px 15px}
+
+#primary_nav_wrap ul ul ul{
+  top:0;
+  left:100%}
+
+#primary_nav_wrap ul li:hover > ul{
+  display:block}
+
+.numbers{
+  width: 25px;}
+
+/** Footer **/  
+
+footer{
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;}
+
+/** Back2top **/
+
+#back-top {
+  display:block;
+  position: fixed;
+  bottom:20px;
+  right: 47%;
+  z-index: 100;}
+
+.text-private{
+    margin-left: 128px;
+  }
+
+/** Falta el Sticky Footer **/
 
