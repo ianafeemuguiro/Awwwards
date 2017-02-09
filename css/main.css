@@ -1,4 +1,40 @@
+.space-modal{
+  padding-top: 10px;
+}
+
+.btn-load{
+  margin-right: 300px;
+}
+
+.logo{
+  width: 170px;}
+
+.member-text{
+  font-size: 14px;
+  margin-top: 12px;
+  padding-right: 30px;
+}
+
+.sumit{
+  font-size: 14px;
+  background-color:  #389c90;
+  padding-top:12px;
+  padding-bottom: 13px;
+  text-align: center;
+  color:white;
+}
+
+.sumit:hover{
+  background-color: #009688;
+}
+
+.list{
+  font-size: 14px;
+}
 /** Este "row" ayuda hacer full la grid de foundation (No borrar) **/
+
+ul li {
+  list-style: none;}
 
 .row {
 max-width: 100%;}
@@ -50,6 +86,8 @@ span {
   z-index: 2;
   display: inline-block;}
 
+/** Search **/
+
 input[type="text"].dream-search {
   width: 90px;
   padding-left: 35px;}
@@ -68,6 +106,50 @@ input[type="text"].dream-search:focus {
 .center-row ul{
   display: table;
   margin: 0 auto;}
+
+input.search-text {
+  color: white;
+  z-index:5;
+  transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+  height: 45px;
+  width: 0;
+  margin-top: -60px;
+  padding: 4px 0 4px 40px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 0px solid transparent;
+  background: url(https://dl.dropboxusercontent.com/u/6624374/opensource-projects/codepen/search.svg) no-repeat left 9px center transparent;
+  background-size:20px;
+}
+input.search-text:focus {
+  z-index:3; 
+  width: 270px;
+  border: 1px solid transparent;  
+  background-color: white;
+  outline: none;
+  cursor:auto;
+  padding-right: 10px;
+}
+
+input.search-submit {
+  position: relative;
+  z-index: 4;
+  top:17px;
+  left: 49px;
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  cursor: pointer; 
+  background: none;
+}
+
+input.search-text::-webkit-search-cancel-button {
+  cursor:pointer;
+}
 
 /** Bg Banner **/
 
@@ -131,7 +213,7 @@ stroke-dashoffset:0
 }
 
 .progress-control{
-  padding-left: 400px;}
+  padding-left: 350px;}
 
 /***** Barra de Progreso 1 *****/
 
